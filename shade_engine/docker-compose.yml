@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  robot-0:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shade-robot-0
+    command: ["--robot-id", "0", "--x", "10", "--y", "15", "--port", "8080"]
+    ports:
+      - "8080:8080"
+    networks:
+      shade-net:
+        aliases:
+          - robot-0
+    restart: unless-stopped
+
+  robot-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shade-robot-1
+    command: ["--robot-id", "1", "--x", "25", "--y", "15", "--port", "8081"]
+    ports:
+      - "8081:8081"
+    networks:
+      shade-net:
+        aliases:
+          - robot-1
+    restart: unless-stopped
+
+  robot-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shade-robot-2
+    command: ["--robot-id", "2", "--x", "40", "--y", "15", "--port", "8082"]
+    ports:
+      - "8082:8082"
+    networks:
+      shade-net:
+        aliases:
+          - robot-2
+    restart: unless-stopped
+
+  robot-3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shade-robot-3
+    command: ["--robot-id", "3", "--x", "55", "--y", "15", "--port", "8083"]
+    ports:
+      - "8083:8083"
+    networks:
+      shade-net:
+        aliases:
+          - robot-3
+    restart: unless-stopped
+
+  robot-4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shade-robot-4
+    command: ["--robot-id", "4", "--x", "70", "--y", "15", "--port", "8084"]
+    ports:
+      - "8084:8084"
+    networks:
+      shade-net:
+        aliases:
+          - robot-4
+    restart: unless-stopped
+
+networks:
+  shade-net:
+    driver: bridge

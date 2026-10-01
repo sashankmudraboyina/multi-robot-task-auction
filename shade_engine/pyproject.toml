@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shade-protocol"
+version = "1.0.0"
+description = "SHADE: Shadow-Hedged Auction with Decaying Estimates"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Autonomous Systems Fleet Team" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Robotics",
+]
