@@ -8,7 +8,6 @@
 [![Kubernetes Ready](https://img.shields.io/badge/kubernetes-orchestrated-326CE5.svg?logo=kubernetes&logoColor=white)](#-kubernetes-cloud--edge-cluster)
 [![Unity Simulation](https://img.shields.io/badge/simulation-Unity%203D-black.svg?logo=unity)](#-unity-simulation)
 [![CoppeliaSim](https://img.shields.io/badge/simulation-CoppeliaSim%20%2F%20Python-orange.svg)](#-coppeliasim-simulation)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
